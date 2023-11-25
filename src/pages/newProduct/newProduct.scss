@@ -1,0 +1,122 @@
+.newProduct {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding: 30px 20px;
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .title {
+      font-weight: 600;
+      display: block;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .Wrapper {
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+
+    .inputsContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+
+      .uploadImageContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .productImage {
+          width: 230px;
+          height: 230px;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+        .uploadContainer {
+          color: teal;
+          .fileUploadLabel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            border-radius: 8px;
+            background-color: rgb(216, 233, 244);
+            cursor: pointer;
+            &:hover {
+              background-color: teal;
+              color: white;
+            }
+
+            .fileUploadIcon {
+              font-size: 40px;
+            }
+          }
+          .fileUploadInput {
+            display: none;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .row {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        .itemLabel {
+          font-size: 16px;
+          font-weight: 600;
+          color: rgb(118, 118, 118);
+        }
+        .itemInput,
+        .selectActive {
+          // width: 85%;
+          margin-left: 10px;
+          border: 1px solid rgb(181, 181, 181);
+          padding: 6px 8px;
+          border-radius: 4px;
+          font-size: 18px;
+          background-color: white;
+          &::placeholder {
+            color: rgb(167, 167, 167);
+          }
+          &:focus {
+            outline: none;
+            border: 1px solid rgb(118, 118, 118);
+          }
+        }
+      }
+    }
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .createButton {
+        padding: 10px 30px;
+        text-transform: uppercase;
+        background-color: teal;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 16px;
+        cursor: pointer;
+        color: white;
+        &:hover {
+          background-color: rgb(1, 99, 99);
+        }
+      }
+    }
+  }
+}

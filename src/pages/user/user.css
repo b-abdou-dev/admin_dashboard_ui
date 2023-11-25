@@ -1,0 +1,220 @@
+.user {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding: 30px 20px;
+}
+.user .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user .header .title {
+  font-weight: 600;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.user .header .editButton {
+  padding: 8px 30px;
+  text-transform: uppercase;
+  background-color: teal;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+}
+.user .header .editButton:hover {
+  background-color: rgb(1, 99, 99);
+}
+.user .userEditWrapper {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  justify-content: flex-start;
+}
+.user .userEditWrapper .userDetailsContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+}
+.user .userEditWrapper .userDetailsContainer .userDetails {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.user .userEditWrapper .userDetailsContainer .userDetails .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.user .userEditWrapper .userDetailsContainer .userDetails .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.user .userEditWrapper .userDetailsContainer .userDetails .description .name {
+  font-weight: 700;
+  font-size: 17px;
+}
+.user .userEditWrapper .userDetailsContainer .userDetails .description .job {
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(161, 159, 159);
+}
+.user .userEditWrapper .userDetailsContainer .userAccountDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 15px;
+}
+.user .userEditWrapper .userDetailsContainer .userAccountDetails .userAccountTitle {
+  font-weight: 600;
+  color: rgb(161, 159, 159);
+}
+.user .userEditWrapper .userDetailsContainer .userAccountDetails .usernameContainer, .user .userEditWrapper .userDetailsContainer .userAccountDetails .dateBirthContainer {
+  display: flex;
+  margin-left: 10px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.user .userEditWrapper .userDetailsContainer .contactDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 15px;
+}
+.user .userEditWrapper .userDetailsContainer .contactDetails .contactTitle {
+  font-weight: 600;
+  color: rgb(161, 159, 159);
+}
+.user .userEditWrapper .userDetailsContainer .contactDetails .phoneContainer, .user .userEditWrapper .userDetailsContainer .contactDetails .emailContainer, .user .userEditWrapper .userDetailsContainer .contactDetails .residenceContainer {
+  display: flex;
+  margin-left: 10px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.user .userEditWrapper .userEdit {
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+  row-gap: 26px;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+.user .userEditWrapper .userEdit .editHeader .editTitle {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  font-weight: 700;
+}
+.user .userEditWrapper .userEdit .detailsMain {
+  display: flex;
+  justify-content: space-between;
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsUpdateContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsUpdateContainer .detailItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 6px;
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsUpdateContainer .detailItem .usernameLabel {
+  font-size: 16px;
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsUpdateContainer .detailItem .usernameInput {
+  width: 70%;
+  margin-left: 10px;
+  border: none;
+  padding: 3px;
+  border-bottom: 1px solid rgb(129, 85, 24);
+  font-size: 16px;
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsUpdateContainer .detailItem .usernameInput::-moz-placeholder {
+  color: rgb(180, 184, 186);
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsUpdateContainer .detailItem .usernameInput:-ms-input-placeholder {
+  color: rgb(180, 184, 186);
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsUpdateContainer .detailItem .usernameInput::placeholder {
+  color: rgb(180, 184, 186);
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsUpdateContainer .detailItem .usernameInput:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(177, 117, 33);
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsActionContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsActionContainer .uploadImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsActionContainer .uploadImageContainer .profileImage {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsActionContainer .uploadImageContainer .uploadContainer {
+  color: teal;
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsActionContainer .uploadImageContainer .uploadContainer .fileUploadLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: rgb(216, 233, 244);
+  cursor: pointer;
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsActionContainer .uploadImageContainer .uploadContainer .fileUploadLabel:hover {
+  background-color: teal;
+  color: white;
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsActionContainer .uploadImageContainer .uploadContainer .fileUploadLabel .fileUploadIcon {
+  font-size: 40px;
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsActionContainer .uploadImageContainer .uploadContainer .fileUploadInput {
+  display: none;
+  cursor: pointer;
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsActionContainer .updateButton {
+  padding: 8px 30px;
+  text-transform: uppercase;
+  background-color: teal;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+}
+.user .userEditWrapper .userEdit .detailsMain .detailsActionContainer .updateButton:hover {
+  background-color: rgb(1, 99, 99);
+}/*# sourceMappingURL=user.css.map */

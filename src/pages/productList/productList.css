@@ -1,0 +1,68 @@
+.productList {
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.productList .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.productList .header .title {
+  font-weight: 600;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.productList .header .editButton {
+  padding: 8px 30px;
+  text-transform: uppercase;
+  background-color: teal;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+}
+.productList .header .editButton:hover {
+  background-color: rgb(1, 99, 99);
+}
+.productList .table {
+  height: 92%;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.productList .productListProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productList .productListProductImage {
+  width: 36px;
+  height: 36px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.productList .productListEdit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productList .productListEdit .productListProductEdit {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #3bb077;
+  color: white;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.productList .productListEdit .productListDelete {
+  color: #dd1a1a;
+  cursor: pointer;
+}/*# sourceMappingURL=productList.css.map */

@@ -1,0 +1,237 @@
+.user{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 30px 20px;
+
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title{
+            font-weight: 600;
+            display: block;
+            padding: 0;
+            margin: 0;
+        }
+        .editButton{
+            padding: 8px 30px;
+            text-transform: uppercase;
+            background-color: teal;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            color: white;
+            &:hover{
+                background-color: rgb(1, 99, 99);
+            }
+        }   
+    }
+
+    .userEditWrapper{
+        display: flex;
+        column-gap: 20px;
+        justify-content: flex-start;
+
+        .userDetailsContainer{            
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            row-gap: 26px;
+
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.2);
+            
+
+            .userDetails{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                column-gap: 15px;
+                .avatar{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .description{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .name{
+                        font-weight: 700;
+                        font-size: 17px;
+                    }
+                    .job{
+                        font-weight: 700;
+                        font-size: 16px;
+                    color: rgb(161, 159, 159);
+                        
+                        
+                    }
+                }
+            }
+            .userAccountDetails{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                row-gap: 15px ;
+
+                .userAccountTitle{
+                    font-weight: 600;
+                    color: rgb(161, 159, 159);
+
+                }
+                .usernameContainer, .dateBirthContainer{
+                    display: flex;
+                    margin-left: 10px;
+                    column-gap: 15px;
+                }
+            }
+            .contactDetails{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                row-gap: 15px ;
+
+                .contactTitle{
+                    font-weight: 600;
+                    color: rgb(161, 159, 159);
+
+                }
+                .phoneContainer, .emailContainer, .residenceContainer{
+                    display: flex;
+                    margin-left: 10px;
+                    column-gap: 15px;
+                }
+            }
+
+        }
+// 
+        .userEdit{
+            display: flex;
+            flex-direction: column;
+            flex: 4;
+            border-radius: 10px;
+            box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.2);
+            row-gap: 26px;
+            padding: 20px;
+            padding-bottom: 40px;
+
+
+            .editHeader{
+                .editTitle{
+                    margin: 0;
+                    padding: 0;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+                
+            }
+            .detailsMain{
+                display: flex;
+                justify-content: space-between;
+                .detailsUpdateContainer{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 20px ;
+                    .detailItem{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        row-gap: 6px ;
+                        // 
+
+                        .usernameLabel{
+                            font-size: 16px;
+                        }
+                        .usernameInput{
+                            width: 70%;
+                            margin-left: 10px;
+                            border: none;
+                            padding: 3px;
+                            border-bottom: 1px solid rgb(129, 85, 24);
+                            font-size: 16px;
+                            &::placeholder{
+                                color: rgb(180, 184, 186);
+                            }
+                            &:focus {
+                                outline: none;
+                                border-bottom: 2px solid rgb(177, 117, 33);
+
+                            }
+                        }
+                    }
+                }
+                .detailsActionContainer{
+                    flex: 1;
+                    display: flex; 
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .uploadImageContainer{
+                        display: flex; 
+                        align-items: center;
+                        justify-content: flex-end;
+                        gap: 20px;
+                        .profileImage{
+                            width: 250px;
+                            height: 250px;
+                            object-fit: cover;
+                            border-radius: 8px;
+                        }
+                        .uploadContainer{
+                            color: teal;
+                            .fileUploadLabel{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 8px;
+                                border-radius: 8px;
+                                background-color: rgb(216, 233, 244);
+                                cursor: pointer;                     &:hover{
+                                    background-color: teal;
+                                    color: white;
+                                }   
+
+                                .fileUploadIcon{
+                                    font-size: 40px;
+                                }
+                            }
+                            .fileUploadInput{
+                                display: none;
+                                cursor: pointer;
+                            }
+
+                        }
+                    }
+
+                        .updateButton{
+                            padding: 8px 30px;
+                            text-transform: uppercase;
+                            background-color: teal;
+                            border: none;
+                            border-radius: 8px;
+                            font-weight: 600;
+                            cursor: pointer;
+                            color: white;
+                            &:hover{
+                                background-color: rgb(1, 99, 99);
+                            }
+                        }
+
+                    
+                    
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,100 @@
+.newUser {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding: 30px 20px;
+}
+.newUser .header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.newUser .header .title {
+  font-weight: 600;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.newUser .rowsWrapper {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+  padding: 24px 30px;
+}
+.newUser .rowsWrapper .rowContainer {
+  width: 100%;
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.newUser .rowsWrapper .rowContainer .right, .newUser .rowsWrapper .rowContainer .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.newUser .rowsWrapper .rowContainer .right .itemLabel, .newUser .rowsWrapper .rowContainer .left .itemLabel {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(118, 118, 118);
+}
+.newUser .rowsWrapper .rowContainer .right .itemInput, .newUser .rowsWrapper .rowContainer .right .selectActive, .newUser .rowsWrapper .rowContainer .left .itemInput, .newUser .rowsWrapper .rowContainer .left .selectActive {
+  margin-left: 10px;
+  border: 1px solid rgb(181, 181, 181);
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 18px;
+  background-color: white;
+}
+.newUser .rowsWrapper .rowContainer .right .itemInput::-moz-placeholder, .newUser .rowsWrapper .rowContainer .right .selectActive::-moz-placeholder, .newUser .rowsWrapper .rowContainer .left .itemInput::-moz-placeholder, .newUser .rowsWrapper .rowContainer .left .selectActive::-moz-placeholder {
+  color: rgb(167, 167, 167);
+}
+.newUser .rowsWrapper .rowContainer .right .itemInput:-ms-input-placeholder, .newUser .rowsWrapper .rowContainer .right .selectActive:-ms-input-placeholder, .newUser .rowsWrapper .rowContainer .left .itemInput:-ms-input-placeholder, .newUser .rowsWrapper .rowContainer .left .selectActive:-ms-input-placeholder {
+  color: rgb(167, 167, 167);
+}
+.newUser .rowsWrapper .rowContainer .right .itemInput::placeholder, .newUser .rowsWrapper .rowContainer .right .selectActive::placeholder, .newUser .rowsWrapper .rowContainer .left .itemInput::placeholder, .newUser .rowsWrapper .rowContainer .left .selectActive::placeholder {
+  color: rgb(167, 167, 167);
+}
+.newUser .rowsWrapper .rowContainer .right .itemInput:focus, .newUser .rowsWrapper .rowContainer .right .selectActive:focus, .newUser .rowsWrapper .rowContainer .left .itemInput:focus, .newUser .rowsWrapper .rowContainer .left .selectActive:focus {
+  outline: none;
+  border: 1px solid rgb(118, 118, 118);
+}
+.newUser .rowsWrapper .rowContainer .right .genderOptions, .newUser .rowsWrapper .rowContainer .left .genderOptions {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  gap: 20px;
+  padding: 6px 8px;
+}
+.newUser .rowsWrapper .rowContainer .right .genderOptions .genderChoiceContainer, .newUser .rowsWrapper .rowContainer .left .genderOptions .genderChoiceContainer {
+  font-size: 17px;
+}
+.newUser .rowsWrapper .rowContainer .right .genderOptions .genderChoiceContainer input, .newUser .rowsWrapper .rowContainer .left .genderOptions .genderChoiceContainer input {
+  margin-right: 6px;
+}
+.newUser .footer {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newUser .footer .createButton {
+  padding: 10px 30px;
+  text-transform: uppercase;
+  background-color: teal;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+.newUser .footer .createButton:hover {
+  background-color: rgb(1, 99, 99);
+}/*# sourceMappingURL=newUser.css.map */

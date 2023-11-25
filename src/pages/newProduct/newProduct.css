@@ -1,0 +1,125 @@
+.newProduct {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding: 30px 20px;
+}
+.newProduct .header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.newProduct .header .title {
+  font-weight: 600;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.newProduct .Wrapper {
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px;
+}
+.newProduct .Wrapper .inputsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.newProduct .Wrapper .inputsContainer .uploadImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.newProduct .Wrapper .inputsContainer .uploadImageContainer .productImage {
+  width: 230px;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+.newProduct .Wrapper .inputsContainer .uploadImageContainer .uploadContainer {
+  color: teal;
+}
+.newProduct .Wrapper .inputsContainer .uploadImageContainer .uploadContainer .fileUploadLabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: rgb(216, 233, 244);
+  cursor: pointer;
+}
+.newProduct .Wrapper .inputsContainer .uploadImageContainer .uploadContainer .fileUploadLabel:hover {
+  background-color: teal;
+  color: white;
+}
+.newProduct .Wrapper .inputsContainer .uploadImageContainer .uploadContainer .fileUploadLabel .fileUploadIcon {
+  font-size: 40px;
+}
+.newProduct .Wrapper .inputsContainer .uploadImageContainer .uploadContainer .fileUploadInput {
+  display: none;
+  cursor: pointer;
+}
+.newProduct .Wrapper .inputsContainer .row {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+.newProduct .Wrapper .inputsContainer .row .itemLabel {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(118, 118, 118);
+}
+.newProduct .Wrapper .inputsContainer .row .itemInput,
+.newProduct .Wrapper .inputsContainer .row .selectActive {
+  margin-left: 10px;
+  border: 1px solid rgb(181, 181, 181);
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 18px;
+  background-color: white;
+}
+.newProduct .Wrapper .inputsContainer .row .itemInput::-moz-placeholder, .newProduct .Wrapper .inputsContainer .row .selectActive::-moz-placeholder {
+  color: rgb(167, 167, 167);
+}
+.newProduct .Wrapper .inputsContainer .row .itemInput:-ms-input-placeholder, .newProduct .Wrapper .inputsContainer .row .selectActive:-ms-input-placeholder {
+  color: rgb(167, 167, 167);
+}
+.newProduct .Wrapper .inputsContainer .row .itemInput::placeholder,
+.newProduct .Wrapper .inputsContainer .row .selectActive::placeholder {
+  color: rgb(167, 167, 167);
+}
+.newProduct .Wrapper .inputsContainer .row .itemInput:focus,
+.newProduct .Wrapper .inputsContainer .row .selectActive:focus {
+  outline: none;
+  border: 1px solid rgb(118, 118, 118);
+}
+.newProduct .Wrapper .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newProduct .Wrapper .footer .createButton {
+  padding: 10px 30px;
+  text-transform: uppercase;
+  background-color: teal;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+.newProduct .Wrapper .footer .createButton:hover {
+  background-color: rgb(1, 99, 99);
+}/*# sourceMappingURL=newProduct.css.map */

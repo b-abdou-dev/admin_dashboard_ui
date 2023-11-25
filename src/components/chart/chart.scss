@@ -1,0 +1,16 @@
+
+.chart{
+    flex: 1;
+    padding: 8px 20px;
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow-x: hidden;
+
+
+    .chartTitle{
+        margin-bottom: 20px;
+    }
+    .graph{
+        width: 100%;
+    }
+}

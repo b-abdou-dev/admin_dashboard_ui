@@ -1,0 +1,64 @@
+.transactions{
+    flex: 2;
+    padding: 20px 20px;
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.2);
+    border-radius: 10px;
+
+    .title{
+        padding: 0px;
+        margin: 0px;
+    }
+    .table{
+        width: 100%;
+        border-spacing: 16px;
+        th {
+            text-align: left;
+        }
+        .desc{
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            .imageContainer{
+                .image{
+                    width: 50px;
+                    height: 50px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .date, .amount{
+            font-weight: 400;
+        }
+
+        // td{
+        //     text-align: center; 
+        //     vertical-align: middle;
+        // }
+        .button{
+            padding: 5px 9px;
+            border: none;
+            border-radius: 10px;
+            text-transform: capitalize;
+
+
+            &.approved{
+                background-color: #e5faf2;
+                color: #04b16f;
+            }
+            &.declined{
+                background-color: #fae5e5;
+                color: #b10404;
+            }
+            &.pending{
+                background-color: #c8e8e9;
+                color: #005957;
+            }
+        }
+
+        
+    }
+}

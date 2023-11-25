@@ -1,0 +1,112 @@
+.newUser{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 30px 20px;
+
+    // 
+// 
+    .header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .title{
+            font-weight: 600;
+            display: block;
+            padding: 0;
+            margin: 0;
+        }
+    }
+// 
+    .rowsWrapper{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: center;
+        margin: 0 auto;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.2);
+        padding: 24px 30px;
+
+
+        .rowContainer{            
+            width: 100%;
+            display: flex;
+            column-gap: 30px;
+ 
+            .right, .left{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px ;
+                .itemLabel{
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: rgb(118, 118, 118);
+                    ;
+                }
+                .itemInput, .selectActive{
+                    // width: 85%;
+                    margin-left: 10px;
+                    border: 1px solid rgb(181, 181, 181);
+                    padding: 6px 8px;
+                    border-radius: 4px;
+                    font-size: 18px;
+                    background-color: white;
+                    &::placeholder{
+                        color: rgb(167, 167, 167);
+                    }
+                    &:focus {
+                        outline: none;
+                        border: 1px solid rgb(118, 118, 118);
+
+                    }
+
+                }
+                .genderOptions{
+                    display: flex;
+                    align-items: center;
+                    margin-left: 10px;
+                    gap: 20px;
+                    padding: 6px 8px;
+
+                    
+                    .genderChoiceContainer{
+                            font-size: 17px;
+                        input{
+                            margin-right: 6px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    .footer{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .createButton{
+            padding: 10px 30px;
+            text-transform: uppercase;
+            background-color: teal;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            color: white;
+            &:hover{
+                background-color: rgb(1, 99, 99);
+            }
+
+        }
+
+    }
+}
