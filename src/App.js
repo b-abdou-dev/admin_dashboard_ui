@@ -2,7 +2,7 @@ import React from "react";
 
 import SideBar from "./components/sidebar/SideBar";
 import TopBar from "./components/topbar/TopBar";
-import "./app.css";
+import "./App.css";
 import Home from "./pages/home/Home";
 import UserList from "./pages/userList/UserList";
 import User from "./pages/user/User";
